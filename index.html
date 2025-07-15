@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <title>Funeral Sign-in form</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/Images/dove-png-41742.png" alt="Dove" class="floating-dove">
+            <h1 class="title"><em>In Loving Memory</em></h1>
+            <h3 class="titleSub">Please sign below</h3>
+        </div>
+    </header>
+    <main>
+        <form id="signInForm">
+            <label for="firstNameInput">First Name: </label>
+            <input type="text" name="first-Name" id="firstNameInput" required>
+            <p class="errorMessage"></p>
+
+            <label for="lastNameInput">Last Name: </label>
+            <input type="text" name="last-name" id="lastNameInput" required>
+            <p class="errorMessage"></p>
+
+            <label for="phoneNumber">Phone Number: </label>
+            <input type="text" placeholder="###-###-####" id="phoneNumber" >
+            <p class="errorMessage2"></p>
+
+            <label for="relationship">Relationship:</label>
+            <select name="relationshipStatus" id="relationship" required >
+                <option value="">---Select an option---</option>
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="sister">Sister</option>
+                <option value="brother">Brother</option>
+                <option value="cousin">Cousin</option>
+                <option value="aunt">Aunt</option>
+                <option value="uncle">Uncle</option>
+                <option value="grandparent">Grandparent</option>
+                <option value="friend">Friend</option>
+            </select>
+            <img src="Images/dove-png-41742.png"    alt="Dove" class="floating-dove dove-left">
+            <label for="message"><em class="message">Your words, your memories:</em></label>
+            <textarea id="message" name="kindWords" id="message" placeholder="Max 150 characters" maxlength="150" minlength="10"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <!-- Preview section -->
+    <section id="previewSection">
+        <h2 class="roseGold">Please Confirm Your Information</h2>
+        <p id="previewText"></p>
+        <button id="editBtn">Edit</button>
+        <button id="confirmBtn">Confirm</button>
+    </section>
+    <!-- Guestlist container -->
+    <section id="guestListContainer">
+        <img src="Images/dove-png-41742.png"    alt="Dove" class="floating-dove dove-left">
+        <h1>A special thank you to those who chose to share their names in support of <strong><em>ME!</em></strong></h1>
+        <h2 class="attendance">In loving attendance:</h2>
+        <ul id="guestLists"></ul>
+    </section>
+    <footer>
+        <!--copyrights, contact info, maybe a contact button to your email-->
+    </footer>
+</body>
+<script src="index.js" defer></script>
+</html>

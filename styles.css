@@ -1,0 +1,270 @@
+html{
+    background-color: tan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    animation: borderColorChange 5.5s ease infinite;
+    background-color: rgb(157, 118, 118);
+    border: 5px solid;
+    border-radius: 10px;
+    box-shadow: 9px -9px 23px rgba(78, 25, 25, 0.749);
+    margin-top: 110px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 710px;
+}
+
+@keyframes borderColorChange{
+    0% {border-color: tan;
+    box-shadow: 0 0 10px tan;}
+    25% {border-color: #B76E79;
+    box-shadow: 0 0 15px #B76E79;
+    }
+    50% {border-color: rgb(72, 33, 33);
+    box-shadow: 0 0 10px rgb(72, 33, 33);
+    }
+    75% {border-color: #B76E79;
+    box-shadow: 0 0 15px #B76E79;
+    }
+    100% {border-color: rgb(38, 22, 22);
+    box-shadow: 0 0 10px rgb(38, 22, 22);
+    }  
+}
+
+.header-container{
+    color: white;
+    text-align: center;
+    margin-bottom: 20.4px;
+}
+
+.title{
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    text-shadow: 1px 1px 5px #B76E79;
+}
+
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.titleSub{
+    margin: auto;
+}
+
+main{
+    align-items: center;
+    background-color: rgb(72, 33, 33);
+    border-radius: 10px;
+    box-shadow: 9px 9px 6px black;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    margin: auto;
+    width: 40vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 80vh;
+    margin-left: 48px;
+    margin-top: 66px;
+    width: 325px;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+form {
+    animation: fadeIn 2s ease;
+}
+
+label{
+    color: tan;
+    margin-bottom: 0;
+    margin-right: 75px;
+    text-align: center;
+}
+
+input[type="text"]{
+    align-items: center;
+    border-radius: 7px;
+    margin-left: 12px;
+    padding: 2px;
+    text-align: center;
+    width: 210px;
+}
+
+input{
+    box-shadow: 1px -1px #a65c6d;
+    text-transform: capitalize;
+}
+
+input, textarea, select {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #B76E79;
+    border-color: #B76E79;
+}
+
+input::placeholder, textarea::placeholder{
+    text-align: center;
+}
+
+input#phoneNumber{
+    text-align: center;
+}
+
+.errorMessage, .errorMessage2{
+    color: red;
+    display: none;
+    font-size: small;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.errorMessage2{
+    margin-right: 80px;
+    visibility: visible;
+}
+
+textarea#message{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.message{
+    margin-left: 7px; 
+}
+
+#relationship{
+    border-radius: 7px;
+    box-shadow: 1px -1px #a65c6d;
+    margin-right: 75px;
+    text-align: center;
+}
+
+textarea {
+    box-shadow: 1px -1px #a65c6d;
+    border-radius: 10px;
+    margin-left: -3px;
+    padding: 8px;
+    resize: none;
+    text-align: left;
+    width: 233px;
+}
+
+
+button {
+    background-color: #B76E79;  /* dusty rose */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 83px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    width: 75px;
+}
+
+button:hover {
+    background-color: #a65c6d; /* slightly darker rose on hover */
+}
+
+#previewSection{
+    background: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    font-size: larger;
+    margin: 49px;
+    padding: 10px;
+    position: relative;
+    bottom: 447px;
+    text-align: center;
+
+}
+
+.roseGold {
+    color: #a65c6d;
+}
+
+#previewText{
+    color: #B76E79;
+    margin-left: 30px;
+}
+
+#editBtn, #confirmBtn {
+    margin-right: 65px;
+    text-align: center;
+}
+
+button#editBtn{
+    margin-right: 2px;
+}
+
+button#confirmBtn{
+    margin-left: 40px;
+    padding: 9px
+}
+
+section{
+    text-align: center;
+    color: white;
+}
+
+.floating-dove {
+position: absolute;
+top: 40px;
+right: 50px;
+width: 100px;
+opacity: 0.8;
+animation: floatUpDown 5s ease-in-out infinite;
+z-index: 100;
+}
+
+@keyframes floatUpDown {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-20px);
+}
+}
+
+.dove-left {
+top: 60px;
+left: 40px;
+animation-delay: 2s;
+}
+
+#guestListContainer{
+    position: relative;
+    bottom: -3px;
+}
+
+.guestLists{
+    list-style: none;
+
+}
+
+.attendance{
+    margin-bottom: auto;
+    margin-top: auto;
+}
