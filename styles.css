@@ -275,7 +275,7 @@ section#guestListContainer {
   /* Styles for tablets and smaller devices */
 body {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -297,25 +297,33 @@ section#guestListContainer{
 
 #signInForm {
     width: 100%;
-    margin-left: 167px;
+    margin-left: 107px;
     margin-top: 27px;
     height: auto;
     text-align: center;
 }
 
 label {
-    margin-right: 158px;
+    margin-right: 112px;
 }
 
 input[type="text"]{
-    width: 54%;
+    width: 48%;
+    margin-left: 55px;
 }
 
 #relationship{
     width: 60%;
-    margin-left: 5px;
+    margin-left: 37px;
 }
 
+textarea{
+    width: 60%;
+    margin-left: 112px;
+}
+button{
+    margin-left: 135px;
+}
 #previewSection{
         width: 50%;
         margin: 33px auto;
@@ -340,14 +348,14 @@ form {
 }
 
  /* Styles for smaller devices */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 body {
         width: 90%;
         margin: auto;
         padding: 10px;
     }
 main{
-        width: 100%;
+        width: 92%;
         height: auto;
         margin: 20px auto;
     }
@@ -362,16 +370,28 @@ main{
         margin-right: 0;
     }
     input[type="text"]{
-        width: 100%;
+        width: 56%;
+        margin-left: 150px;
     }
     #relationship{
-        width: 100%;
-        margin-left: 0;
+        width: 43%;
+        margin-left: 183px;
     }
+
+    textarea{
+        width: 56%;
+        margin-left: 149px;
+    }
+
+    button{
+        margin-left: 287px;
+    }
+
     #guestListContainer{
-        width: 100%;
+        width: 97%;
         margin-left: 0;
         margin-top: 20px;
+        padding: 0;
     }
     #previewSection{
         width: 100%;
@@ -391,7 +411,7 @@ main{
         height: auto;
         text-align: center;
     }
-}  */
+} 
 
 
 /* phone */
