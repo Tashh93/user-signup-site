@@ -14,6 +14,36 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../FrontEnd/index.html'));
 });
 
+app.post('/submit', (req, res) => {
+    const {
+        ['first-name']: firstName,
+        ['last-name']: lastName,
+        ['phone']: phone,
+        ['relationshipStatus']: relationshipStatus,
+        ['kindWords']: kindWords
+    } = req.body;
+
+    
+console.log('📬 New Submission:');
+console.log(`Name: ${firstName} ${lastName}`);
+console.log(`Phone: ${phone}`);
+console.log(`Relationship: ${relationshipStatus}`);
+console.log(`Message: ${kindWords}`);
+
+
+console.log('Form submitted');
+
+
+res.send(`
+    <h1>Thank you, ${firstName}! </h1>
+<p>I appreciate your kind words.</p>
+<p>We will be reaching out to you soon.</p> 
+<p>Thanks for your support!</p>
+`);
+
+
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });

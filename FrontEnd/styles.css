@@ -326,6 +326,10 @@ textarea{
     width: 60%;
     margin-left: 112px;
 }
+textarea#message{
+        width: 60%;
+        margin-left: 25px;
+}
 button{
     margin-left: 135px;
 }
@@ -382,7 +386,10 @@ main{
         width: 43%;
         margin-left: 183px;
     }
-
+    textarea#message{
+        width: 56%;
+        margin-left: 150px;
+    }
     textarea{
         width: 56%;
         margin-left: 25px;
@@ -498,6 +505,6 @@ main{
     }
 
     button{
-        margin-right: 81px;
+        margin-right: 225px;
     }
 }
