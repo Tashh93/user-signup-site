@@ -372,7 +372,7 @@ main{
         text-align: center;
     }
     label {
-        margin-right: 0;
+        text-align: center;
     }
     input[type="text"]{
         width: 56%;
@@ -385,11 +385,11 @@ main{
 
     textarea{
         width: 56%;
-        margin-left: 149px;
+        margin-left: 25px;
     }
 
     button{
-        margin-left: 287px;
+        margin-left: 265px;
     }
 
     #guestListContainer{
@@ -406,9 +406,17 @@ main{
         bottom: 0;
     }
     section#guestListContainer {
-        width: 100%;
+        width: 88%;
         margin-left: 0;
         margin-top: 20px;
+    }
+    li{
+        list-style: none;
+        padding: 0;
+        margin-left: -34px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
     }
     form {
         width: 100%;
