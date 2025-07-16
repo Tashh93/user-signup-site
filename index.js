@@ -10,7 +10,6 @@ const status = document.getElementById('relationship');
 const message = document.getElementById('message');
 const error = document.querySelector('.errorMessage');
 const error2 = document.querySelector('.errorMessage2');
-const previewMessage = document.getElementById('previewText');
 const previewSection = document.getElementById('previewSection');
 const previewText = document.getElementById('previewText');
 const editBtn = document.getElementById('editBtn');
@@ -73,16 +72,12 @@ form.addEventListener('submit', function(e){
     // Building preview message
     previewText.innerHTML =`
     <strong>Name:</strong> ${firstName} ${lastName}<br><br>
-    <strong>Phone Number:</strong>${phoneValue}<br><br>
-    <strong>Message:</strong>${userMessage}
+    <strong>Phone Number:</strong> ${phoneValue}<br><br>
+    <strong>Message:</strong> ${userMessage}
     `
     previewSection.style.display = 'block';
     form.style.display = 'none';
     
-    
-    //Changing the position on the guestlist so when clicked it wont be so far at the bottom
-    guestlistHolder.style.position = 'relative';
-    guestlistHolder.style.bottom = '437px';
 
 });
 
@@ -91,11 +86,11 @@ confirmBtn.addEventListener("click", function() {
     alert(`Thank you for supporting me ${firstName} ${lastName}!`);
     
     previewSection.style.display = 'none';
+    form.style.display = 'flex';
+    form.reset();
+    guestlist.scrollIntoView({ behavior: "smooth" });
 
-    // guestlistHolder.style.width = '350px';
-    guestlistHolder.style.marginLeft = '5px';
-    guestlistHolder.style.position = 'relative';
-    guestlistHolder.style.bottom = "16px";
+
 
 
     const guestlist = document.getElementById('guestLists');

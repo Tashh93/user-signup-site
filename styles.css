@@ -248,15 +248,17 @@ z-index: 100;
 }
 }
 
-.dove-left {
-top: 60px;
-left: 40px;
-animation-delay: 2s;
+.dove-left, .dove-left2 {
+    top: 60px;
+    left: 40px;
+    animation-delay: 2s;
 }
 
-#guestListContainer{
-    position: relative;
-    bottom: -3px;
+section#guestListContainer {
+    position: static;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .guestLists{
@@ -267,4 +269,202 @@ animation-delay: 2s;
 .attendance{
     margin-bottom: auto;
     margin-top: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets and smaller devices */
+body {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+main{
+    width: 62%;
+    height: 460px;
+    margin: 20px auto;
+    }
+
+#relationship{
+    margin-left: 30px;
+}
+
+section#guestListContainer{
+    width: 81%;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#signInForm {
+    width: 100%;
+    margin-left: 167px;
+    margin-top: 27px;
+    height: auto;
+    text-align: center;
+}
+
+label {
+    margin-right: 158px;
+}
+
+input[type="text"]{
+    width: 54%;
+}
+
+#relationship{
+    width: 60%;
+    margin-left: 5px;
+}
+
+#previewSection{
+        width: 50%;
+        margin: 33px auto;
+        padding: 0;
+        position: relative;
+        bottom: 432px;
+}
+
+section#guestListContainer {
+    width: 92%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+form {
+    width: max-content;
+    margin-left: 0;
+    height: auto;
+    text-align: center;
+}
+
+}
+
+ /* Styles for smaller devices */
+/* @media (max-width: 768px) {
+body {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+main{
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+    #signInForm {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 27px;
+        height: auto;
+        text-align: center;
+    }
+    label {
+        margin-right: 0;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    #relationship{
+        width: 100%;
+        margin-left: 0;
+    }
+    #guestListContainer{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #previewSection{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        bottom: 0;
+    }
+    section#guestListContainer {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    form {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        text-align: center;
+    }
+}  */
+
+
+/* phone */
+@media (max-width: 480px) {
+    body{
+        width: 75%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    form{
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    main, form {
+        width: 65vw;
+        height: auto;
+        margin: 7px 7px auto;
+        padding: 10px;
+    }
+
+    .dove-left2{
+    display: none;
+    }
+
+    #guestListContainer{
+        background-color: rgb(157, 118, 118);
+        box-shadow: none;
+        color: white;
+        margin-left: 0 !important;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .specialThanks{
+        font-size: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    #previewSection{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        position: static;
+    }
+
+    label{
+        margin-left: 72px;
+    }
+
+    input[type="text"]{
+        width: 64%;
+        margin-left: 0;
+    }
+
+    #relationship{
+        width: 73%;
+        margin-left: 76px;
+    }
+
+    form{
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    button{
+        margin-right: 81px;
+    }
 }
