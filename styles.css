@@ -161,11 +161,11 @@ textarea#message{
 textarea {
     box-shadow: 1px -1px #a65c6d;
     border-radius: 10px;
-    margin-left: -3px;
+    margin-left: 3px;
     padding: 8px;
     resize: none;
     text-align: left;
-    width: 233px;
+    width: 237px;
 }
 
 
@@ -177,7 +177,7 @@ button {
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 15px;
-    margin-left: 83px;
+    margin-left: 95px;
     margin-top: 15px;
     padding: 8px 16px;
     transition: background-color 0.3s ease;
@@ -256,7 +256,7 @@ z-index: 100;
 
 section#guestListContainer {
     position: static;
-    margin-top: 40px;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
 }

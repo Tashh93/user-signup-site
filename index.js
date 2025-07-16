@@ -83,13 +83,12 @@ form.addEventListener('submit', function(e){
 
 confirmBtn.addEventListener("click", function() {
     console.log('The confirm button has been clicked.')
-    alert(`Thank you for supporting me ${firstName} ${lastName}!`);
     
     previewSection.style.display = 'none';
     form.style.display = 'flex';
     form.reset();
-   
-   .6 // Add the guest's name to the guest list
+
+    // Add the guest's name to the guest list
     const guestlist = document.getElementById('guestLists');
     const newName = document.createElement('li');
     newName.style.listStyle = "none";
@@ -104,7 +103,21 @@ confirmBtn.addEventListener("click", function() {
 
     // Show the form again
     form.style.display ="flex";
-    
+
+    // Clear the error messages
+    error.innerHTML = '';
+    error.style.display = 'none';
+    error2.innerHTML = '';
+    error2.style.display = 'none';
+
+    // Clear the form inputs
+    firstNameInput.value = '';  
+    lastNameInput.value = '';
+    phoneNumber.value = '';
+    message.value = '';
+    status.value = 'Select Relationship';
+
+
     // Reset the form
     form.reset();
 
