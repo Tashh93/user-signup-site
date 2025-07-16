@@ -88,11 +88,8 @@ confirmBtn.addEventListener("click", function() {
     previewSection.style.display = 'none';
     form.style.display = 'flex';
     form.reset();
-    guestlist.scrollIntoView({ behavior: "smooth" });
-
-
-
-
+   
+   .6 // Add the guest's name to the guest list
     const guestlist = document.getElementById('guestLists');
     const newName = document.createElement('li');
     newName.style.listStyle = "none";
@@ -100,6 +97,7 @@ confirmBtn.addEventListener("click", function() {
     newName.textContent = `${firstName} ${lastName}`;
     guestlist.appendChild(newName);
     guestlist.style.margin = "auto";
+    console.log(`Guest added: ${firstName} ${lastName}`);
 
     // Hide the preview section
     previewSection.style.display = "none";
